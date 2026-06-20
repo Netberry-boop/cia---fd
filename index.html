@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SpendWise Finance</title>
+  <title>SpendWise — Simple spending guidance</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -11,118 +11,107 @@
   <header class="sticky top-0 z-20 border-b border-slate-800 bg-slate-950/95 backdrop-blur-xl">
     <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 md:px-8">
       <a href="#top" class="text-xl font-semibold tracking-tight text-sky-300">SpendWise</a>
-      <nav aria-label="Primary navigation" class="hidden items-center gap-6 md:flex">
+      <nav aria-label="Primary navigation" class="flex flex-wrap justify-end items-center gap-4 md:gap-6">
         <a href="#overview" class="transition hover:text-white">Overview</a>
-        <a href="#insights" class="transition hover:text-white">Insights</a>
-        <a href="#tips" class="transition hover:text-white">Invest Tips</a>
+        <a href="#patterns" class="transition hover:text-white">Patterns</a>
+        <a href="#tips" class="transition hover:text-white">Tips</a>
         <a href="#contact" class="transition hover:text-white">Contact</a>
+        <button id="themeToggleButton" class="rounded-full border border-slate-700 bg-slate-950/80 px-4 py-2 text-sm text-slate-100 transition hover:border-slate-500 hover:text-white">Light mode</button>
       </nav>
-      <button class="rounded-full bg-sky-500 px-4 py-2 text-sm font-medium text-slate-950 transition hover:bg-sky-400 md:hidden">Menu</button>
     </div>
   </header>
 
   <main id="top" class="space-y-14 px-4 py-8 md:px-8 md:py-12">
     <section id="overview" class="grid gap-8 lg:grid-cols-[1.2fr_0.8fr]">
       <article class="space-y-6">
-        <p class="inline-flex items-center gap-2 rounded-full bg-sky-500/15 px-3 py-1 text-sm text-sky-200">Trading platform • smart spending</p>
-        <h1 class="max-w-3xl text-4xl font-extrabold tracking-tight text-white sm:text-5xl">Analyze your spendings, see patterns, and get smart invest tips.</h1>
-        <p class="max-w-2xl text-slate-300">SpendWise is a clean finance landing page that demonstrates semantic structure, responsive layout, Tailwind styling, and a tiny domain-related JavaScript integration for market insight.</p>
+        <p class="inline-flex items-center gap-2 rounded-full bg-sky-500/15 px-3 py-1 text-sm text-sky-200">Bank spending analysis • invest guidance</p>
+        <h1 class="max-w-3xl text-4xl font-extrabold tracking-tight text-white sm:text-5xl">See your spending patterns, budget smarter, and get simple investment direction.</h1>
+        <p class="max-w-2xl text-slate-300">SpendWise is a practical bank-style page that helps you see your monthly spending, compare essentials vs extras, and pick one easy way to save a little more every month.</p>
         <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
-          <a href="#insights" class="inline-flex items-center justify-center rounded-full bg-sky-500 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-sky-400">View Insights</a>
-          <a href="#tips" class="inline-flex items-center justify-center rounded-full border border-slate-700 px-5 py-3 text-sm text-slate-100 transition hover:border-slate-500 hover:text-white">Investment Tips</a>
+          <a href="#patterns" class="inline-flex items-center justify-center rounded-full bg-sky-500 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-sky-400">Explore your spending</a>
+          <a href="#tips" class="inline-flex items-center justify-center rounded-full border border-slate-700 px-5 py-3 text-sm text-slate-100 transition hover:border-slate-500 hover:text-white">See a practical tip</a>
         </div>
       </article>
       <aside class="rounded-3xl border border-slate-800 bg-slate-900/80 p-6 shadow-xl shadow-slate-950/40">
-        <h2 class="text-lg font-semibold text-white">Why SpendWise?</h2>
-        <p class="mt-4 text-slate-300">A bank-backed platform can help you understand where your money goes, identify spending patterns, and recommend investments suited to your budget.</p>
+        <h2 class="text-lg font-semibold text-white">Platform snapshot</h2>
+        <p class="mt-4 text-slate-300">A finance landing page for a bank-style service that makes spend insight easy and encourages smarter saving behavior.</p>
         <dl class="mt-6 grid gap-4 text-sm sm:grid-cols-2">
           <div class="rounded-2xl bg-slate-950/80 p-4">
-            <dt class="font-semibold text-sky-300">Semantic</dt>
-            <dd class="mt-1 text-slate-300">HTML elements that match real content sections.</dd>
+            <dt class="font-semibold text-sky-300">Spend pattern</dt>
+            <dd class="mt-1 text-slate-300">Identify categories and see where cash is moving each month.</dd>
+          </div>
+          <div class="rounded-2xl bg-slate-950/80 p-4">
+            <dt class="font-semibold text-sky-300">Investment cue</dt>
+            <dd class="mt-1 text-slate-300">Simple suggestions that match your available surplus.</dd>
           </div>
           <div class="rounded-2xl bg-slate-950/80 p-4">
             <dt class="font-semibold text-sky-300">Responsive</dt>
-            <dd class="mt-1 text-slate-300">Flexible grid and relative sizing for desktop and mobile.</dd>
-          </div>
-          <div class="rounded-2xl bg-slate-950/80 p-4">
-            <dt class="font-semibold text-sky-300">Clean UI</dt>
-            <dd class="mt-1 text-slate-300">Modern finance palette with clarity and spacing.</dd>
+            <dd class="mt-1 text-slate-300">Grid and flex layouts adapt for mobile and desktop.</dd>
           </div>
           <div class="rounded-2xl bg-slate-950/80 p-4">
             <dt class="font-semibold text-sky-300">Minimal JS</dt>
-            <dd class="mt-1 text-slate-300">Only one lightweight fetch to show live market info.</dd>
+            <dd class="mt-1 text-slate-300">A single market fetch keeps the page lightweight.</dd>
           </div>
         </dl>
       </aside>
     </section>
 
-    <section id="insights" class="space-y-6">
+    <section id="patterns" class="space-y-6">
       <header class="space-y-3">
-        <p class="text-sm uppercase tracking-[0.3em] text-slate-400">Spending pattern insights</p>
-        <h2 class="text-3xl font-bold text-white">Track the money flow and see how spending behavior changes over time.</h2>
+        <p class="text-sm uppercase tracking-[0.3em] text-slate-400">Spending pattern summary</p>
+        <h2 class="text-3xl font-bold text-white">Understand monthly spend categories at a glance.</h2>
       </header>
       <div class="grid gap-6 lg:grid-cols-3">
         <article class="rounded-3xl border border-slate-800 bg-slate-900/80 p-6">
-          <h3 class="text-xl font-semibold text-white">Category Split</h3>
-          <p class="mt-3 text-slate-300">Visualize recurring costs such as essentials, leisure, and savings with a grid-based summary layout.</p>
-          <div class="mt-5 grid gap-3 sm:grid-cols-2">
-            <span class="rounded-2xl bg-slate-950/90 px-4 py-3 text-sm text-slate-200">Essentials 48%</span>
-            <span class="rounded-2xl bg-slate-950/90 px-4 py-3 text-sm text-slate-200">Discretionary 28%</span>
-            <span class="rounded-2xl bg-slate-950/90 px-4 py-3 text-sm text-slate-200">Investing 15%</span>
-            <span class="rounded-2xl bg-slate-950/90 px-4 py-3 text-sm text-slate-200">Savings 9%</span>
-          </div>
+          <h3 class="text-xl font-semibold text-white">Needs</h3>
+          <p class="mt-3 text-slate-300">Essential costs like rent, utilities, groceries, and insurance.</p>
+          <p class="mt-5 text-2xl font-bold text-sky-300">48%</p>
         </article>
         <article class="rounded-3xl border border-slate-800 bg-slate-900/80 p-6">
-          <h3 class="text-xl font-semibold text-white">Flexible budgeting</h3>
-          <p class="mt-3 text-slate-300">Use relative values to keep layouts adaptable across devices instead of fixed sizes.</p>
-          <ul class="mt-5 space-y-3 text-slate-300">
-            <li>Flexible grid layout with minmax</li>
-            <li>Proportional card widths</li>
-            <li>Responsive typography using viewport-friendly sizing</li>
-          </ul>
+          <h3 class="text-xl font-semibold text-white">Wants</h3>
+          <p class="mt-3 text-slate-300">Discretionary spending for dining out, subscriptions, and entertainment.</p>
+          <p class="mt-5 text-2xl font-bold text-sky-300">28%</p>
         </article>
         <article class="rounded-3xl border border-slate-800 bg-slate-900/80 p-6">
-          <h3 class="text-xl font-semibold text-white">Fast review</h3>
-          <p class="mt-3 text-slate-300">A quick spend analysis can lead to better savings and smarter tips tailored for your financial profile.</p>
-          <div class="mt-5 rounded-3xl bg-slate-950/80 p-4 text-sm text-slate-200">
-            <p><strong>Tip:</strong> Revisit recurring subscriptions monthly to free cash for investment.</p>
-          </div>
+          <h3 class="text-xl font-semibold text-white">Savings</h3>
+          <p class="mt-3 text-slate-300">Money set aside for emergency funds, investments, and future goals.</p>
+          <p class="mt-5 text-2xl font-bold text-sky-300">24%</p>
         </article>
       </div>
     </section>
 
     <section id="tips" class="space-y-6">
       <header class="space-y-3">
-        <p class="text-sm uppercase tracking-[0.3em] text-slate-400">Investment suggestions</p>
-        <h2 class="text-3xl font-bold text-white">Simple tips based on monthly spend patterns.</h2>
+        <p class="text-sm uppercase tracking-[0.3em] text-slate-400">Investment advice</p>
+        <h2 class="text-3xl font-bold text-white">Basic guidance based on your spending profile.</h2>
       </header>
       <div class="grid gap-6 xl:grid-cols-[1.4fr_0.8fr]">
         <article class="rounded-3xl border border-slate-800 bg-slate-900/80 p-6">
           <div class="grid gap-5 sm:grid-cols-2">
             <div class="rounded-3xl bg-slate-950/80 p-4">
               <p class="text-sm uppercase tracking-[0.2em] text-slate-400">Step 1</p>
-              <h3 class="mt-3 text-lg font-semibold text-white">Review your spending</h3>
-              <p class="mt-2 text-slate-300">Identify recurring costs and classify them into needs, wants, and investments.</p>
+              <h3 class="mt-3 text-lg font-semibold text-white">Review categories</h3>
+              <p class="mt-2 text-slate-300">Check what portion of your income goes to needs, wants, and savings.</p>
             </div>
             <div class="rounded-3xl bg-slate-950/80 p-4">
               <p class="text-sm uppercase tracking-[0.2em] text-slate-400">Step 2</p>
-              <h3 class="mt-3 text-lg font-semibold text-white">Allocate a budget</h3>
-              <p class="mt-2 text-slate-300">Reserve a portion of monthly surplus for low-risk funds or emergency savings.</p>
+              <h3 class="mt-3 text-lg font-semibold text-white">Use spare cash</h3>
+              <p class="mt-2 text-slate-300">Put a portion of discretionary money into savings or low-risk funds.</p>
             </div>
           </div>
           <div class="mt-5 rounded-3xl border border-slate-800 bg-slate-950/80 p-5 shadow-inner shadow-slate-900/40">
-            <p class="text-sm uppercase tracking-[0.2em] text-slate-400">Suggested tip</p>
-            <p class="mt-3 text-slate-200">If your monthly entertainment cost is above 20%, consider redirecting one subscription into an index fund or savings plan and watch your long-term value grow.</p>
+            <p class="text-sm uppercase tracking-[0.2em] text-slate-400">Quick suggestion</p>
+            <p class="mt-3 text-slate-200">If discretionary spending is above 25%, shift one subscription or purchase into an investment or savings account.</p>
           </div>
         </article>
 
         <aside class="rounded-3xl border border-slate-800 bg-slate-900/80 p-6">
           <div class="flex items-center justify-between gap-4 text-white">
             <div>
-              <p class="text-sm uppercase tracking-[0.2em] text-slate-400">Market insight</p>
-              <h3 class="mt-2 text-2xl font-semibold">Live update</h3>
+              <p class="text-sm uppercase tracking-[0.2em] text-slate-400">Market signal</p>
+              <h3 class="mt-2 text-2xl font-semibold">Live insight</h3>
             </div>
-            <span class="rounded-full bg-sky-500/15 px-3 py-2 text-sm text-sky-200">Data via Coindesk</span>
+            <span class="rounded-full bg-sky-500/15 px-3 py-2 text-sm text-sky-200">Via Coindesk</span>
           </div>
           <div class="mt-6 space-y-4 text-slate-300">
             <div class="rounded-3xl bg-slate-950/80 p-4">
@@ -130,48 +119,23 @@
               <p id="btcPrice" class="mt-3 text-3xl font-semibold text-white">Loading...</p>
             </div>
             <div class="rounded-3xl bg-slate-950/80 p-4">
-              <p class="text-sm text-slate-400">Suggested action</p>
-              <p id="btcTip" class="mt-3 text-slate-200">Checking market trend...</p>
+              <p class="text-sm text-slate-400">Practical note</p>
+              <p id="btcTip" class="mt-3 text-slate-200">Checking market data...</p>
             </div>
           </div>
+          <p id="marketUpdated" class="mt-4 text-xs uppercase tracking-[0.2em] text-slate-500">Refreshing market data...</p>
         </aside>
       </div>
-    </section>
-
-    <section class="grid gap-6 md:grid-cols-2">
-      <article class="rounded-3xl border border-slate-800 bg-slate-900/80 p-6">
-        <h2 class="text-3xl font-bold text-white">How SpendWise works</h2>
-        <p class="mt-4 text-slate-300">The platform is built for clarity: bank data is summarized, key spending patterns are shown, and simple tips point you toward smarter invest decisions.</p>
-        <ul class="mt-6 space-y-4 text-slate-300">
-          <li class="flex items-start gap-3"><span class="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-sky-400"></span>Emphasizes semantic layout for accessibility and SEO.</li>
-          <li class="flex items-start gap-3"><span class="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-sky-400"></span>Responsive cards and grid use relative sizing and minmax values.</li>
-          <li class="flex items-start gap-3"><span class="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-sky-400"></span>Minimal JavaScript to keep the experience fast and focused.</li>
-        </ul>
-      </article>
-      <article class="rounded-3xl border border-slate-800 bg-slate-900/80 p-6">
-        <h2 class="text-3xl font-bold text-white">User-focused design</h2>
-        <p class="mt-4 text-slate-300">Each section is designed with purpose: storytelling, comparison, insight, and recommendation.</p>
-        <div class="mt-6 grid gap-4 sm:grid-cols-2">
-          <div class="rounded-3xl bg-slate-950/80 p-4">
-            <h3 class="text-lg font-semibold text-white">Clear sections</h3>
-            <p class="mt-2 text-slate-300">Navigation anchors let users jump to key content instantly.</p>
-          </div>
-          <div class="rounded-3xl bg-slate-950/80 p-4">
-            <h3 class="text-lg font-semibold text-white">Mobile-ready</h3>
-            <p class="mt-2 text-slate-300">Layouts adapt using grid, flex, and responsive spacing.</p>
-          </div>
-        </div>
-      </article>
     </section>
   </main>
 
   <footer id="contact" class="border-t border-slate-800 bg-slate-950/90 px-4 py-8 text-slate-400 md:px-8">
     <div class="mx-auto flex max-w-7xl flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
-      <p>SpendWise • Basic finance/demo site for spend analysis and tips.</p>
+      <p>SpendWise — finance spending analysis demo.</p>
       <div class="flex flex-wrap gap-3 text-sm">
         <a href="#top" class="text-slate-300 transition hover:text-white">Back to top</a>
-        <a href="#overview" class="transition hover:text-white">Overview</a>
-        <a href="#tips" class="transition hover:text-white">Invest Tips</a>
+        <a href="#patterns" class="transition hover:text-white">Patterns</a>
+        <a href="#tips" class="transition hover:text-white">Tips</a>
       </div>
     </div>
   </footer>

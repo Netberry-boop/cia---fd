@@ -2,16 +2,14 @@
 
 ## Problem Statement
 
-SpendWise is a minimal finance platform concept for a bank-backed service that helps users understand their spending patterns and suggests investment tips based on those patterns. The goal is to create a simple, responsive website that highlights semantic HTML, modern layout techniques, and a tiny amount of JavaScript for finance-related data.
+SpendWise is a simple concept for a bank-style site that helps people think about their spending in a clearer, more human way. It shows expense categories, offers one easy tip, and keeps the whole experience calm and approachable.
 
-## Features
+## What the page does
 
-- Semantic page structure using `header`, `nav`, `main`, `section`, `article`, `aside`, and `footer`
-- Responsive layout with CSS Grid, Flexbox, and relative sizing
-- Tailwind CSS via CDN for fast styling and consistent design
-- Anchor navigation using IDs for same-page section jumps
-- Clean UI with dark finance-inspired palette and spacing
-- Minimal JavaScript for a domain-related market insight example
+- Shows a friendly summary of spending categories
+- Highlights one simple step to save or invest a little more wisely
+- Uses responsive layout so it works smoothly on phones and desktops
+- Includes one live finance data point to connect the page to real markets
 
 ## Technologies
 
